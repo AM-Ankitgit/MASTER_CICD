@@ -1,0 +1,9 @@
+name: linttest
+on : push
+
+jobs:
+    lints:
+        run-on: ubnutu-latest
+
+    steps:
+        -name: Checkout code
