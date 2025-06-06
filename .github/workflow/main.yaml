@@ -3,8 +3,13 @@ on : push
 
 jobs:
     lints:
-        run-on: ubnutu-latest
+        run-on: ubuntu-latest
 
     steps:
-        -name: Checkout code
-        -run: test_linting.py
+        - name: Checkout code
+          uses: action/checkout@v3
+
+        - name: Setup Python
+          uses: actions/setup-python@v4
+    
+        - run: test_linting.py
