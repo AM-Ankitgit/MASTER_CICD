@@ -2,8 +2,8 @@ name: linttest
 on : push
 
 jobs:
-    lints:
-        run-on: ubuntu-latest
+    lint:
+        runs-on: ubuntu-latest
 
     steps:
         - name: Checkout code
