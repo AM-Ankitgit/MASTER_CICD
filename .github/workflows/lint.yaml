@@ -1,12 +1,12 @@
-name: linttest
-on : push
+name: linttest # 
+on : push  # when to excute the workflow when push happen
 
 jobs:
     lint:
-        runs-on: ubuntu-latest
+        runs-on: ubuntu-latest    # setting up the env on which machine we want test the workflow
 
-        steps:
-            - name: Checkout code
+        steps:                     # providing the task 
+            - name: Checkout code   # checkout the code
               uses: actions/checkout@v3
 
             - name: Setup Python
@@ -20,7 +20,7 @@ jobs:
 
             - name: Run flake8
               run: |
-                flake8 test_linting.py
+                flake8 test_linting.py  # excute python file with flake8
 
 
 
