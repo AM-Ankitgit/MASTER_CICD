@@ -1,5 +1,10 @@
 name: CI-DEMO # 
-on : push  # when to excute the workflow when push happen
+on: 
+  push:
+  branches:
+    - main  # when to excute the workflow when push happen
+  pull_request:
+
 
 jobs:
     lint:
