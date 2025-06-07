@@ -3,11 +3,11 @@ on : push  # when to excute the workflow when push happen
 
 jobs:
     lint:
-        runs-on: ${{metrix.os}}    # setting up the env on which machine we want test the workflow
+        runs-on: ${{matrix.os}}    # setting up the env on which machine we want test the workflow
 
         strategy:
-          metrix:
-              os: [ubuntu-latest,windows-latest,macos-latest]
+          matrix:
+              os: [ubuntu-latest, windows-latest, macos-latest]
 
         steps:                     # providing the task 
             - name: Checkout code   # checkout the code
