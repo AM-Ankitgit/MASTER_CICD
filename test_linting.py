@@ -1,6 +1,7 @@
 
 def get_(x, y):
-    return x+y
+    s = x+y
+    return s
 
 
 print(get_(2, 3))
