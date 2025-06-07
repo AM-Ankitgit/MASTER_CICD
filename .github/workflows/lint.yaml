@@ -1,8 +1,8 @@
 name: CI-DEMO # 
 on: 
   push:
-  branches:
-    - main  # when to excute the workflow when push happen
+    branches:
+      - main  # when to excute the workflow when push happen
   pull_request:
 
 
