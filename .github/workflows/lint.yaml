@@ -1,4 +1,4 @@
-name: linttest # 
+name: CI-DEMO # 
 on : push  # when to excute the workflow when push happen
 
 jobs:
